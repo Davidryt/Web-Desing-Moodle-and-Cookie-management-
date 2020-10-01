@@ -9,3 +9,12 @@
     vertical-align: middle;
     font-family: Helvetica, sans-serif;
 }
+
+.side-menu {
+	float: left;
+	
+}
+
+.latest-news {
+	float: right;
+}
