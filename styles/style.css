@@ -1,7 +1,7 @@
 .course-logo {
     border-radius: 50%;
     width: 5%;
-	max-width: 50%;
+	min-width: 6%;
 	heig: auto;
     float: left;
 }
