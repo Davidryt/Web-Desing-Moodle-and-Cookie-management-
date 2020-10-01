@@ -1,16 +1,9 @@
 .course-logo {
     border-radius: 50%;
     width: 5%;
-	min-width: 6%;
+	min-width: 7%;
 	heig: auto;
     float: left;
-}
-
-
-.course-title {
-    text-align: center;
-    vertical-align: middle;
-    font-family: Helvetica, sans-serif;
 }
 
 .side-menu {
