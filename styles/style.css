@@ -6,6 +6,22 @@
     float: left;
 }
 
+
+.course-title {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Helvetica, sans-serif;
+}
+
+.side-menu {
+	float: left;
+	
+}
+
+.latest-news {
+	float: right;
+}
+
 .header {
   overflow: hidden;
   background-image:linear-gradient(to right,#f2f2f2, #8C2600);
@@ -55,4 +71,5 @@
   .header-right {
     float: none;
   }
+
 }
