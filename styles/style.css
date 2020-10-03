@@ -3,9 +3,11 @@
 }
 
 .course-logo {
+	padding-bottom: 10px;
+	padding-right: 10px;
     border-radius: 50%;
-    width: 70px;
-	height: 70px;
+    width: 80px;
+	height: 80px;
     float: left;
 }
 
@@ -29,7 +31,6 @@
 
 
 #latest-news {
-	float: right;
 	width: 25%;
 	float: left;
 	text-align: justify;
@@ -59,9 +60,10 @@
 }
 
 .header a.title {
+  padding-top: 20px;
+  padding-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
-  height: 50px;
 }
 
 
