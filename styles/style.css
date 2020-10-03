@@ -3,9 +3,11 @@
 }
 
 .course-logo {
+	padding-bottom: 10px;
+	padding-right: 10px;
     border-radius: 50%;
-    width: 70px;
-	height: 70px;
+    width: 80px;
+	height: 80px;
     float: left;
 }
 
@@ -29,7 +31,6 @@
 
 
 #latest-news {
-	float: right;
 	width: 25%;
 	float: left;
 	text-align: justify;
@@ -39,6 +40,12 @@
 
 #course-contents{
 	float: left
+}
+
+.menu-img{
+	float: left;
+	width: 40px;
+	display: none
 }
 
 .header {
@@ -59,9 +66,10 @@
 }
 
 .header a.title {
+  padding-top: 20px;
+  padding-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
-  height: 50px;
 }
 
 
@@ -81,6 +89,35 @@
   float: right;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding-top: 10px;
+  padding-right: 20px
+}
+
+.dropdown-content {	
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 [class*="col-"] {
   float: left;
@@ -96,10 +133,25 @@
   .header-right {
     float: none;
   }
+ 
+  .menu-img{
+	display: block;
+  }
+	
+  .course-logo {
+	display: none;
+  }
+	
+	#side-menu{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 700px) {
 	  /*TABLET*/
+
+  
+	
   .col-t-1{
     width: 8.33%;
   }
