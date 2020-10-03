@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .course-logo {
     border-radius: 50%;
     width: 5%;
@@ -5,7 +9,6 @@
 	heig: auto;
     float: left;
 }
-
 
 .course-title {
     text-align: center;
@@ -15,11 +18,27 @@
 
 .side-menu {
 	float: left;
-	
+	width: 25%;
+}
+
+.course-contents {
+	width: 50%;
+	float: left;
+	background-color: lightgrey;
+	border-radius: 10px;
+	padding: 0 2% 0 2%;
+}
+
+.content-img {
+	max-width: 50%;
+	border-radius: 5px;
 }
 
 .latest-news {
-	float: right;
+	width: 25%;
+	float: left;
+	text-align: justify;
+	padding-left: 20px;
 }
 
 .header {
@@ -61,15 +80,29 @@
   float: right;
 }
 
+/* Tablet */
+@media screen and (max-width : 768px ){
+	.header a {
+		float: none;
+    	display: block;
+    	text-align: left;
+  	}
+  	.header-right {
+    	float: none;
+  	}
+}
 
-@media screen and (max-width: 700px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-
+@media screen and (max-width : 600px ){
+	.header a {
+		float: none;
+    	display: block;
+    	text-align: left;
+  	}
+  	.header-right {
+    	float: none;
+  	}
+	
+	.course-contents {
+		
+	}
 }
