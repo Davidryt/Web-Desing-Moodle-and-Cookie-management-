@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .course-logo {
     border-radius: 50%;
     width: 70px;
@@ -7,11 +11,30 @@
 
 #side-menu {
 	float: left;
-	
+	width: 25%;
 }
+
+.course-contents {
+	width: 50%;
+	float: left;
+	background-color: lightgrey;
+	border-radius: 10px;
+	padding: 0 2% 0 2%;
+}
+
+.content-img {
+	max-width: 50%;
+	border-radius: 5px;
+}
+
 
 #latest-news {
 	float: right;
+	width: 25%;
+	float: left;
+	text-align: justify;
+	padding-left: 20px;
+
 }
 
 #course-contents{
@@ -57,6 +80,7 @@
 .header-right {
   float: right;
 }
+
 
 [class*="col-"] {
   float: left;
