@@ -10,6 +10,10 @@ p, li {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+	text-align: justify;
+}
+
 .course-logo {
 	padding-bottom: 10px;
 	padding-right: 10px;
