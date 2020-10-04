@@ -21,7 +21,7 @@ p, li {
 
 
 #side-menu {
-	padding-top: 12px ;
+	padding-top: 132px ;
 	float: left;
 	width: 25%;
 	position: fixed;
@@ -64,7 +64,7 @@ p, li {
 }
 
 #title-tabla{
-	padding-top: 40px;
+	padding-top: 150px;
 	padding-bottom: 30px;
 	font-size: 30px;
 }
@@ -76,8 +76,18 @@ p, li {
 	
 }
 
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image:linear-gradient(to right,#f2f2f2, #8C2600);
+  color: white;
+  text-align: right;
+}
+
 #latest-news {
-	width: 25%;
+	padding-top: 120px;
 	float: left;
 	text-align: justify;
 	padding-left: 20px;
@@ -94,12 +104,16 @@ p, li {
 	display: none
 }
 
+
+
 .header {
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   background-image:linear-gradient(to right,#f2f2f2, #8C2600);
   padding: 20px 10px;
+  margin-top: -10px;
 }
-
 
 .header a {
   color: black;
@@ -192,15 +206,19 @@ p, li {
 		display: none;
 	}
 	
+	#latest-news{
+		width: 100%
+	}
+	
+	
 	#fake-space {
 		display: none;
 	}
+	
 }
 
 @media screen and (min-width: 700px) {
 	  /*TABLET*/
-
-  
 	
   .col-t-1{
     width: 8.33%;
