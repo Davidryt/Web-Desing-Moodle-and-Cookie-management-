@@ -20,6 +20,7 @@ p, li {
 }
 
 #side-menu {
+	padding-top: 12px ;
 	float: left;
 	width: 25%;
 	position: fixed;

@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+h1, h2, h3, a {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p, li {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .course-logo {
 	padding-bottom: 10px;
 	padding-right: 10px;
@@ -11,10 +19,35 @@
     float: left;
 }
 
+
 #side-menu {
+	padding-top: 12px ;
 	float: left;
 	width: 25%;
+	position: fixed;
 }
+
+#side-menu div div {
+	margin: 1em;
+	border-style: solid;
+	text-align: center;
+	border-radius: 10px;
+	background-color: lightblue;
+}
+
+#side-menu a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#side-menu a:hover {
+	text-decoration: underline;
+}
+
+#side-menu a:active {
+	font-weight: bold;
+}
+
 
 .icon_stud{
 	width: 60px;	
@@ -163,6 +196,10 @@ th {
   }
 	
 	#side-menu{
+		display: none;
+	}
+	
+	#fake-space {
 		display: none;
 	}
 }
