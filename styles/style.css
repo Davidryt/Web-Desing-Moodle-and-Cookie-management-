@@ -87,6 +87,10 @@ p, li {
 	text-align: center;
 }
 
+#spacer {
+	margin-top: 15%;
+}
+
 
 .header a {
   color: black;
