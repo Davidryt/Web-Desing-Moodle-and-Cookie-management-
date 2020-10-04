@@ -66,7 +66,6 @@ p, li {
 	float: left;
 	text-align: justify;
 	padding-left: 20px;
-
 }
 
 #course-contents{
@@ -81,8 +80,15 @@ p, li {
 
 .header {
   overflow: hidden;
-  background-image:linear-gradient(to right,#f2f2f2, #8C2600);
+  background-color: lightblue;
   padding: 20px 10px;
+	border-style: solid;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#spacer {
+	margin-top: 15%;
 }
 
 
