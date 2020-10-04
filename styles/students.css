@@ -1,280 +1,299 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, a {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+h1,
+h2,
+h3,
+a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-p, li {
-	font-family: Arial, Helvetica, sans-serif;
+p,
+li {
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .course-logo {
-	padding-bottom: 10px;
-	padding-right: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     border-radius: 50%;
     width: 80px;
-	height: 80px;
+    height: 80px;
     float: left;
 }
 
 #side-menu {
-	padding-top: 132px ;
-	float: left;
-	width: 25%;
-	position: fixed;
+    padding-top: 132px;
+    float: left;
+    width: 25%;
+    position: fixed;
 }
 
 #side-menu div div {
-	margin: 1em;
-	border-style: solid;
-	text-align: center;
-	border-radius: 10px;
-	background-color: lightblue;
+    margin: 1em;
+    border-style: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: lightblue;
 }
 
-#side-menu a:link, a:visited {
-	text-decoration: none;
-	color: black;
+#side-menu a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 #side-menu a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #side-menu a.active {
-	font-weight: bold;
+    font-weight: bold;
 }
 
-
-.icon_stud{
-	width: 60px;
-	border-radius: 50%;
+.icon_stud {
+    width: 60px;
+    border-radius: 50%;
 }
 
-.icon_com{
-	width: 35px;
+.icon_com {
+    width: 35px;
 }
 
-#title-tabla{
-	padding-top: 150px;
-	font-size: 30px;
+#title-tabla {
+    padding-top: 150px;
+    font-size: 30px;
 }
 
-.tabla{
-	padding-top: 30px;
-	width: 100%;
-	text-align: center;
-	
+.tabla {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 #latest-news {
-	padding-top: 120px;
-	float: left;
-	text-align: justify;
-	padding-left: 20px;
-
+    padding-top: 120px;
+    float: left;
+    text-align: justify;
+    padding-left: 20px;
 }
 
-#course-contents{
-	float: left
+#course-contents {
+    float: left
 }
 
-.menu-img{
-	float: left;
-	width: 40px;
-	display: none
+.menu-img {
+    float: left;
+    width: 40px;
+    display: none
 }
 
 .header {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-  background-color: lightblue;
-  padding: 20px 10px;
-  margin-top: -8px;
-	border-style: solid;
-	border-radius: 20px;
-	text-align: center;
-
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightblue;
+    padding: 20px 10px;
+    margin-top: -8px;
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
 }
 
-
 .header a {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
 .header a.title {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 30px;
-  font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
 }
-
 
 .header a.buttons:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
-
 
 .header a.active {
-  background-color: #E5E7E9;
-  color: #8C2600;
+    background-color: #E5E7E9;
+    color: #8C2600;
 }
 
-
 .header-right {
-  float: right;
+    float: right;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  float: left;
-  padding-top: 10px;
-  padding-right: 20px
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 20px
 }
 
-.dropdown-content {	
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 [class*="col-"] {
-  float: left;
-  width:100%;
+    float: left;
+    width: 100%;
 }
-
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: lightblue;
-  color: white;
-  text-align: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: right;
 }
 
-	#spacer {
-	margin-top: 15%;
-    }
+#spacer {
+    margin-top: 15%;
+}
 
 @media screen and (max-width: 600px) {
-	
-	
-	#latest-news{
-		width: 100%
-	}
-	
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
- 
-  .menu-img{
-	display: block;
-  }
-	
-  .course-logo {
-	display: none;
-  }
-	#title-tabla{
-		padding-top: 300px;
-	}
-	
-	#side-menu{
-		display: none;
-	}
-	
-	#fake-space {
-		display: none;
-	}
-	
-	#spacer {
-	display: none;
+    #latest-news {
+        width: 100%
     }
-	
-	#spacer_2 {
-	margin-bottom: 15%;
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
     }
-	
+    .header-right {
+        float: none;
+    }
+    .menu-img {
+        display: block;
+    }
+    .course-logo {
+        display: none;
+    }
+    #title-tabla {
+        padding-top: 300px;
+    }
+    #side-menu {
+        display: none;
+    }
+    #fake-space {
+        display: none;
+    }
+    #spacer {
+        display: none;
+    }
+    #spacer_2 {
+        margin-bottom: 15%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-	  /*TABLET*/
-	
-  .col-t-1{
-    width: 8.33%;
-  }
-  .col-t-2{
-    width: 16.66%;
-  }
-  .col-t-3 {width: 25%;}
-  .col-t-4 {width: 33.33%;}
-  .col-t-5 {width: 41.66%;}
-  .col-t-6 {width: 50%;}
-  .col-t-7 {width: 58.33%;}
-  .col-t-8 {width: 66.66%;}
-  .col-t-9 {width: 75%;}
-  .col-t-10 {width: 83.33%;}
-  .col-t-11 {width: 91.66%;}
-  .col-t-12 {width: 100%;}
-
+    /*TABLET*/
+    .col-t-1 {
+        width: 8.33%;
+    }
+    .col-t-2 {
+        width: 16.66%;
+    }
+    .col-t-3 {
+        width: 25%;
+    }
+    .col-t-4 {
+        width: 33.33%;
+    }
+    .col-t-5 {
+        width: 41.66%;
+    }
+    .col-t-6 {
+        width: 50%;
+    }
+    .col-t-7 {
+        width: 58.33%;
+    }
+    .col-t-8 {
+        width: 66.66%;
+    }
+    .col-t-9 {
+        width: 75%;
+    }
+    .col-t-10 {
+        width: 83.33%;
+    }
+    .col-t-11 {
+        width: 91.66%;
+    }
+    .col-t-12 {
+        width: 100%;
+    }
 }
-
-
 
 @media only screen and (min-width: 769px) {
-  /*FOR DESKTOP*/
-  .col-1{
-    width: 8.33%;
-  }
-  .col-2{
-    width: 16.66%;
-  }
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-	
+    /*FOR DESKTOP*/
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
 }
-
-
-
