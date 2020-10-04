@@ -182,7 +182,11 @@ p, li {
   text-align: right;
 }
 
-@media screen and (max-width: 700px) {
+	#spacer {
+	margin-top: 15%;
+    }
+
+@media screen and (max-width: 600px) {
 	
 	
 	#latest-news{
@@ -205,6 +209,9 @@ p, li {
   .course-logo {
 	display: none;
   }
+	#title-tabla{
+		padding-top: 300px;
+	}
 	
 	#side-menu{
 		display: none;
@@ -213,9 +220,18 @@ p, li {
 	#fake-space {
 		display: none;
 	}
+	
+	#spacer {
+	display: none;
+    }
+	
+	#spacer_2 {
+	margin-bottom: 15%;
+    }
+	
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 768px) {
 	  /*TABLET*/
 	
   .col-t-1{
@@ -239,7 +255,7 @@ p, li {
 
 
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 769px) {
   /*FOR DESKTOP*/
   .col-1{
     width: 8.33%;

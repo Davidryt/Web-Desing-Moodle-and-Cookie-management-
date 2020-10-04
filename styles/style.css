@@ -90,15 +90,13 @@ p, li {
   overflow: hidden;
   background-color: lightblue;
   padding: 20px 10px;
-  margin-top: -8px;
+  margin-top: -16px;
 	border-style: solid;
 	border-radius: 20px;
 	text-align: center;
 }
 
-#spacer {
-	margin-top: 15%;
-}
+
 
 
 .header a {
@@ -170,10 +168,16 @@ p, li {
   width:100%;
 }
 
-@media screen and (max-width: 700px) {
+#spacer {
+	margin-top: 15%;
+}
+
+@media screen and (max-width: 600px) {
+	/*SMART*/
 	
 	#course-contents{
 		padding-top: 250px;	
+		width: 100%;
 	}
 	
 	#latest-news{
@@ -205,10 +209,17 @@ p, li {
 	#fake-space {
 		display: none;
 	}
-}
+	#spacer_2 {
+	margin-top: 15%;
+    }
+	
 
-@media screen and (min-width: 700px) {
+}
+	
+
+@media screen and (max-width: 768px) {
 	  /*TABLET*/
+	
 	
   .col-t-1{
     width: 8.33%;
@@ -231,7 +242,7 @@ p, li {
 
 
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 769px) {
   /*FOR DESKTOP*/
   .col-1{
     width: 8.33%;
