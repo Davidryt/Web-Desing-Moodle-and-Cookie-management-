@@ -44,7 +44,7 @@ p, li {
 	text-decoration: underline;
 }
 
-#side-menu a:active {
+#side-menu a.active {
 	font-weight: bold;
 }
 
