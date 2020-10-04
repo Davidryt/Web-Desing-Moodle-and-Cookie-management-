@@ -79,8 +79,10 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-  background-color: #8B4747;
-  color: white;
+  background-color: lightblue;
+  color: black;
+	border-style: solid;
+	border-color: black;
 }
 
 #latest-news {
@@ -96,7 +98,7 @@ th {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-image:linear-gradient(to right,#f2f2f2, #8C2600);
+  background-color: lightblue;
   color: white;
   text-align: right;
 }

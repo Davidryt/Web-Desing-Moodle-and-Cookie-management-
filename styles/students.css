@@ -177,7 +177,7 @@ p, li {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-image:linear-gradient(to right,#f2f2f2, #8C2600);
+  background-color: lightblue;
   color: white;
   text-align: right;
 }
