@@ -38,6 +38,7 @@ li {
 #footer a{
 	text-decoration: none;
 	color: white;
+	margin-right: 20px;
 }
 /*We created a flotating side menu, that keeps fixed while scrolling. 
 When we are at a certain, page, we set it bold, and when mouse is over it, it gets underlined */
@@ -122,7 +123,6 @@ a:visited {
 }
 
 .header a.title {
-	font-family: merriweather; 
     padding-top: 20px;
     padding-bottom: 30px;
     font-size: 45px;
@@ -154,6 +154,7 @@ a:visited {
 }
 
 .dropdown-content {
+	margin-top: 40px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -170,7 +171,7 @@ a:visited {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #c6ccd8
 }
 
 .dropdown:hover .dropdown-content {
