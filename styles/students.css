@@ -1,27 +1,29 @@
 
-
+/*This set the student images with a circulalr shape and fixed size*/
 
 .icon_stud {
     width: 60px;
     border-radius: 50%;
 }
-
+/*Sets the fixed size of the communication icon*/
 .icon_com {
     width: 35px;
 }
+   
 
+/* Here we set the font size and the distance betweent the table and header*/
 #title-tabla {
     padding-top: 150px;
     font-size: 30px;
 }
-
+/*Here we set  the main style od the tables (beige and text align)*/
 .tabla {
     padding-top: 30px;
     width: 100%;
     text-align: center;
 }
 
-
+/*Here we set some specific styles for phone devices*/
 
 @media screen and (max-width: 600px) {
     #title-tabla {

@@ -10,8 +10,8 @@
     </head>
     <body>
         <header>
-            <div class="header">
-                <div class="dropdown">
+            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+                <div class="dropdown"> <!-- Hamburger menu (only used in phone mode) -->
                     <img src="images/menu.png" class="menu-img" alt="Menu">
                     <div class="dropdown-content">
                         <a class="active" href="index.html">Course</a>
@@ -20,15 +20,15 @@
                         <a href="grades.html">Grades</a>
                     </div>
                 </div>
-                <img class="course-logo" src="images/logo-f2004.jpg" alt="Rear side of the F2004">
-                <a href="#default" class="title">Race Engineering</a>
+                <img class="course-logo" src="images/logo-f2004.jpg" alt="Rear side of the F2004"> <!-- cOURSE MAIN IMAGE-->
+                <a href="#default" class="title">Race Engineering</a>  <!-- cOURSE TITLE -->
                 <div class="header-right">
                     <a class="active" href="#home">Course</a>
                     <a href="#contact" class="buttons">Contact</a>
                     <a href="#about" class="buttons">Profile</a>
                 </div>
             </div>
-            <!--
+             <!--Failed idea, kept for the record
                 <img class="course-logo" src="images/logo-f2004.jpg" alt="Rear side of the F2004">
                          <h1 class="course-title">Course in Race Engineering</h1>
                          <ul class="">
@@ -37,14 +37,16 @@
                                  <li>Option 3</li>
                          </ul>
                          -->
-        </header>
+        </header> 
+		<!-- This fake space is an empty div to generate enought space for the side menu, since once fixed, overlaps -->
         <div id="fake-space" class="col-3 col-t-3">
             <p></p>
         </div>
+		<!-- Side nav bar menu -->
         <nav id="side-menu" class="col-3 col-t-3 ">
             <div>
                 <div>
-                    <a class="active"  href="index.html">Course</a>
+                    <a class="active"  href="index.html">Course</a> <!-- We mark as active the page where we are -->
                 </div>
                 <div>
                     <a href="students.html">Students</a>
@@ -57,6 +59,9 @@
                 </div>
             </div>
         </nav>
+		<!-- End of the part the repeats every page. Previous code will be only comented in this file, 
+		since is always the same. -->
+		<!-- Main course div (contais all the info plus media) divided using paragraphs and sections-->
         <div id="course-contents" class="col-6 col-t-9">
             <section>
                 <h2 class="unit-title">Unit 1: Racing physics</h2>
@@ -173,11 +178,15 @@
                     to cool the brakes and engine fluids, respectively. Also, the air must be rammed on top of the engine so that pressure
                     is much higher than the atmosphere, giving greater horsepower to the engine the faster the car goes.
                 </p>
+				<!-- This spacer will avoid overlaping with the fixed footer -->
                 <div id="spacer">
                     <p></p>
                 </div>
             </section>
         </div>
+		
+		<!-- This last part also repeats every page, so as we mentioned before, will be explained once in this file --> 
+		<!-- We created an aside on the right in order to keep all the news --> 
         <aside id="latest-news" class="col-3 col-t-12">
             <h2>Latest news</h2>
             <ul>
@@ -186,10 +195,12 @@
                 <li>Task: watch the 2004 F1 season entirely (due in 3 days)</li>
                 <li>Forum is open!</li>
             </ul>
+			<!-- This spacer will avoid overlaping with the fixed footer -->
             <div id="spacer_2">
                 <p></p>
             </div>
         </aside>
+		<!-- A footer that will show the copyright and privacy policies -->
         <footer id="footer">
             <div class="col-2">
                 <a href="#copyright">Copyright</a>

@@ -14,39 +14,51 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*This is the style for the main logo of the web page, in the upper left corner.*/
 
 .course-logo {
-    padding-bottom: 10px;
-    padding-right: 10px;
-    border-radius: 50%;
+    border-radius: 50px;
     width: 80px;
     height: 80px;
     float: left;
 }
-
+/*Fixed footer in the lower part of the web */
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightblue;
+    background-color: #274b69;
     color: white;
+	/*border-radius: 20px;*/
     text-align: right;
+	
 }
 
+#footer a{
+	text-decoration: none;
+	color: white;
+}
+/*We created a flotating side menu, that keeps fixed while scrolling. 
+When we are at a certain, page, we set it bold, and when mouse is over it, it gets underlined */
 #side-menu {
     padding-top: 132px;
     float: left;
     width: 25%;
+	margin-left: -10px;
     position: fixed;
 }
 
 #side-menu div div {
     margin: 1em;
-    border-style: solid;
+	margin-left: 30px;
+	margin-right: 30px;
+    /*border-style: solid;*/
+	height:  30px; 
     text-align: center;
+	padding-top: 2px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: #85a1c1;
 }
 
 #side-menu a:link,
@@ -67,18 +79,17 @@ a:visited {
     max-width: 50%;
     border-radius: 5px;
 }
-
+/*Our lastest news feed, on the right*/
 #latest-news {
     padding-top: 120px;
     float: left;
     text-align: justify;
     padding-left: 20px;
 }
-
+/*This is refered to the main div in the center*/
 #course-contents {
     padding-top: 120px;
     float: left;
-    padding-bot: 20px;
 }
 
 .menu-img {
@@ -86,16 +97,17 @@ a:visited {
     width: 40px;
     display: none
 }
-
+/*We also created a fixed header with buttons on the left*/
 .header {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: lightblue;
+    background-color: #274b69;
     padding: 20px 10px;
     margin-top: -16px;
-    border-style: solid;
-    border-radius: 20px;
+	margin-left: -8px;
+    /*border-style: solid;*/
+    /*border-radius: 20px;*/
     text-align: center;
 }
 
@@ -110,26 +122,29 @@ a:visited {
 }
 
 .header a.title {
+	font-family: merriweather; 
     padding-top: 20px;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
+	color: white;
 }
 
 .header a.buttons:hover {
-    background-color: #ddd;
+    background-color: #c6ccd8;
     color: black;
 }
 
 .header a.active {
-    background-color: #E5E7E9;
-    color: #8C2600;
+    background-color: #c6ccd8;
+    color: black;
 }
 
 .header-right {
+	margin-top: 23px;
     float: right;
 }
-
+/*This menu appears when phone mode enabled, and shows a hamburguer*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -161,18 +176,22 @@ a:visited {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+/*used to set col sizes and responsiveness*/
 [class*="col-"] {
     float: left;
     width: 100%;
 }
-
+/*This ensures that the content is bot hidden by*/
 #spacer {
     margin-top: 15%;
 }
-
+/*Phone especific measures (hide image show hamburger, margins, etc)*/
 @media screen and (max-width: 600px) {
     /*SMART*/
+	.header a.title{
+		font-size: 30px;
+	}
+	
     #course-contents {
         padding-top: 250px;
         width: 100%;
@@ -205,10 +224,13 @@ a:visited {
         margin-top: 25%;
     }
 }
-
-@media screen and (max-width: 768px) {
-    /*TABLET*/
-    .col-t-1 {
+/*tablet column divisions*/
+@media screen and (max-width: 768px) and (min-width: 600px) {
+   
+	.header a.title{
+		font-size: 19px;
+	}
+	.col-t-1 {
         width: 8.33%;
     }
     .col-t-2 {
@@ -244,10 +266,17 @@ a:visited {
     .col-t-12 {
         width: 100%;
     }
+	#spacer {
+    margin-top: 0%;
 }
-
+	#spacer_2 {
+        margin-top: 25%;
+    }
+}
+/*Desktop column division*/
 @media only screen and (min-width: 769px) {
     /*FOR DESKTOP*/
+	
     .col-1 {
         width: 8.33%;
     }

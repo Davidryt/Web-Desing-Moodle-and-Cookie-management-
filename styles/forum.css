@@ -1,32 +1,44 @@
-
+/* separator is a div that creates little white separations between the forum subjects*/
 .separator {
     padding: 5px;
 }
-
+/* here we set the withc and right separation of the number of replies icon*/
 .icon_com {
     width: 25px;
     padding-right: 10px;
 }
-
+/*Sets the size and font size of the title of each forum (upper cell)*/
 .forum-title {
     width: 75%;
     height: 50px;
     font-size: 20px;
 }
-
+/* Here we set the font size and the distance betweent the table and header*/
 #title-tabla {
     padding-top: 150px;
     padding-bottom: 30px;
     font-size: 30px;
 }
-
+/*Here we set  the main style od the tables (beige and text align)*/
 .tabla {
-    background-color: beige;
+    background-color: #c6ccd8;
     width: 100%;
     text-align: center;
 }
 
+.forum-title a{
+	text-decoration: none;
+	color: #5B1523;
+}
 
+th,
+td {
+    text-align: left;
+    padding: 8px;
+	
+}
+
+/*Here we set some specific styles for phone devices*/
 
 @media screen and (max-width: 600px) {
     
