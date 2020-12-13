@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p,
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+
+.content {
+	background-color: white;
+	padding: 10px;
+}
+
+.content h2, p{
+	margin-left:4%;
+}
+
+.content a{
+	margin-left:7%;
+	color: #0000EE;
+	text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.table{
+	border-collapse: collapse;
+	width: 70%;
+    margin-left: 4%;
+}
+
+th,
+td {
+	border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#gradeTable{
+	display: none;
+}
+
+#forum{
+	border-collapse: separate;
+	width: 86%;
+    margin-left: 7%;
+	border-spacing: 0 20px;
+}
+
+#forum td{
+	border-radius: 20px 20px 20px 0;
+	border-color: gray;
+	font-size: 65%;
+}
+
+
+.sidecontent {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	border-radius: 20px;
+	border-style: solid;
+	text-align: left;
+}
+
+
+
+/*used to set col sizes and responsiveness*/
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+
+}
+/*tablet column divisions*/
+@media screen and (max-width: 768px) and (min-width: 600px) {
+   
+	.col-t-1 {
+        width: 8.33%;
+    }
+    .col-t-2 {
+        width: 16.66%;
+    }
+    .col-t-3 {
+        width: 25%;
+    }
+    .col-t-4 {
+        width: 33.33%;
+    }
+    .col-t-5 {
+        width: 41.66%;
+    }
+    .col-t-6 {
+        width: 50%;
+    }
+    .col-t-7 {
+        width: 58.33%;
+    }
+    .col-t-8 {
+        width: 66.66%;
+    }
+    .col-t-9 {
+        width: 75%;
+    }
+    .col-t-10 {
+        width: 83.33%;
+    }
+    .col-t-11 {
+        width: 91.66%;
+    }
+    .col-t-12 {
+        width: 100%;
+    }
+}
+/*Desktop column division*/
+@media only screen and (min-width: 769px) {
+    /*FOR DESKTOP*/
+	
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
