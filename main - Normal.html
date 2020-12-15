@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aula global</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="./style/style.css">
+		<script type="text/javascript" src="./script/script.js"></script>
+		
+		<!-- Importing jquery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Links for Calendar jquery plugin -->
+		<link rel="stylesheet" href="./caleandar-master/css/demo.css"/>
+		<link rel="stylesheet" href="./caleandar-master/css/theme1.css"/>
+		<script type="text/javascript" src="./caleandar-master/js/caleandar.js"></script>
+		<script type="text/javascript" src="./caleandar-master/js/demo.js"></script>
+		
+		<!-- Links for Tabs jquery plugin -->		
+        <link rel='stylesheet' href='./Themeable-jQuery-Tabs-Plugin-CardTabs/css/jquery.cardtabs.css'>
+        <link rel='stylesheet' href='./Themeable-jQuery-Tabs-Plugin-CardTabs/docs/demo.css'>
+        <script type='text/javascript' src='./Themeable-jQuery-Tabs-Plugin-CardTabs/js/jquery.cardtabs.js'></script>
+		
+		
+		<!-- Links for calendar plugin -->
+		<link rel="stylesheet" type="text/css" href="./easycal-master/easycal.css">
+		<style>
+			body{ width: 960px; margin: 0 auto; font-size: 12px; font-family: Arial; box-sizing: border-box;}
+
+		</style>		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		
+		<!-- Links for progress circles plugin -->
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="./circle-represent-percentage-jcirclize/css/jCirclize.css" rel="stylesheet">
+
+
+		
+		<!-- Style to put 2 div side by side -->
+		<style>
+			.flex-container {
+				display: flex;
+				grid-gap: 30px;
+			}
+
+			.flex-container-2 {
+				display: flex;
+			}
+			
+			.flex-child {
+				flex: 1;
+				
+			}  
+
+			.flex-child:first-child {
+				margin-right: 20px;
+			} 
+			
+			.float-container {
+				padding: 5px;
+			}
+
+			.float-child {
+				width: 100%;
+				float: center;
+				padding: 5px;
+			} 
+			.float-child.green {
+				margin-right: 1px;
+			}
+		</style>
+		
+
+
+	</head>
+	<body>
+	
+		<div class="flex-container">
+	
+			<!-- Weekly calendar -->
+		<div class="flex-child">  
+			
+			<h2>Weekly Calendar</h2>
+
+			<div class="mycal" id="mycal" style="width:100%;"></div>
+
+			<script type="text/javascript" src="./easycal-master/dataset.js"></script>
+			<script type="text/javascript" src="./easycal-master/easycal.js"></script>
+
+			<script>
+				$('.mycal').easycal({
+					startDate : '14-12-2020', // OR 31/10/2104
+					timeFormat : 'HH:mm',
+					columnDateFormat : 'dddd, DD MMM',
+					minTime : '09:00:00',
+					maxTime : '18:00:00',
+					slotDuration : 60,
+					timeGranularity : 15,
+					
+					dayClick : function(el, startTime){
+						console.log('Slot selected: ' + startTime);
+					},
+					eventClick : function(eventId){
+						console.log('Event was clicked with id: ' + eventId);
+					},
+
+					events : getEvents(),
+					
+					overlapColor : '#FF0',
+					overlapTextColor : '#000',
+					overlapTitle : 'Multiple'
+				});
+
+
+			</script>
+		</div>
+	
+			
+			
+		<div class="flex-child" class="float-container"> 
+			<!-- Monthly and Exam calendar -->
+			<div class="float-child	green">
+				<h2>Exams & Projects Calendar</h2>
+				<div id="caleandar">
+
+				</div>
+				
+				<script type="text/javascript" src="./caleandar-master/js/caleandar.js"></script>
+				<script type="text/javascript" src="./caleandar-master/js/demo.js"></script>
+			</div>
+			
+			
+			<!-- Progress circles -->
+			<div class="float-child blue" >
+			<div class="flex-container-2">
+				
+				<div id="example" class="box" class="flex-child">
+				<script src="./circle-represent-percentage-jcirclize/dist/jquery.jCirclize.js"></script>
+				<script>
+				  $(document).ready(function() {
+					 $('#example').circlize({
+					  radius: 30,
+					  perc: 60,
+					  usePercentage: true,
+					  background: "#fafafa",
+					  stroke: 4,
+					 });
+
+				 });
+				</script>
+				</div>
+				
+				<div class="flex-child">
+					<br></br>
+					<p>Exams and projects done in the semester </p>
+				</div>				
+				
+			</div>
+			</div>
+		</div>
+		
+		</div>
+		
+		
+
+			<!-- Access to courses -->
+		<h2>My Courses 	<input onkeyup="searchCourses()" id="courseInput" class="input-search input-a" placeholder="Search" /> </h2>
+
+        <div class='tabsholder3'>
+            <div data-tab="All" id="allCourses">
+				<p><a> Artificial intelligence - Group 89 </a></p>
+				<p><a> User interfaces - Group 47 </a></p>
+				<p><a> Introduction to Business Engineering - Group 65 </a></p>
+				<p><a> Networks - Group 72 </a></p>
+				<p><a> Databases - Group 43 </a></p>
+				<p><a> Inclusive Leadership - Group 81 </a></p>
+				<p><a> Statistics - Group 34 </a></p>
+
+            </div>
+            <div data-tab="Favorites">
+				<a> User interfaces - Group 47 </a>
+				    <br /><br />
+				<a> Databases - Group 43 </a>
+
+            </div>
+			<div data-tab="2020">
+				<a> Artificial intelligence - Group 89 </a>
+				    <br /><br />
+				<a> User interfaces - Group 47 </a>
+				    <br /><br />
+				<a> Introduction to Business Engineering - Group 65 </a>
+				    <br /><br />
+				<a> Networks - Group 72 </a>
+				    <br /><br />
+				<a> Databases - Group 43 </a>
+				    <br /><br />
+				<a> Inclusive Leadership - Group 81 </a>
+            </div>
+			<div data-tab="2019">
+				<a> Statistics - Group 34 </a>
+
+            </div>
+		
+        </div>
+		
+
+		
+		<script type='text/javascript'>
+            $('.tabsholder3').cardTabs({theme: 'graygreen'});
+        </script>
+		
+		<!--The function for the search bar is in the main.js script-->
+		<script src="js/main.js"></script>
+
+	
+	</body>
+</html>

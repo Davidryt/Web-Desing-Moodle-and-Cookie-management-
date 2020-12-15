@@ -1,0 +1,42 @@
+{
+  "name": "jquery-inputsearch",
+  "version": "1.0.0",
+  "description": "jQuery plugin for automagically transforming input[type=\"text\"] elements into input[type=\"search\"]-like elements",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "input",
+    "input-text",
+    "input-search",
+    "inputsearch",
+    "searchinput",
+    "html5-element"
+  ],
+  "homepage": "https://github.com/dwiyatci/jquery-inputsearch",
+  "bugs": "https://github.com/dwiyatci/jquery-inputsearch/issues",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "dist/jquery.inputsearch.js",
+  "author": "Glenn Dwiyatcita <dwiyatci@mail.com> (https://tiny.cc/dwiyatci)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwiyatci/harlemshakify.git"
+  },
+  "scripts": {
+    "install:clean": "yarn upgrade || yarn install",
+    "update": "yarn upgrade-interactive --latest",
+    "lint": "eslint --cache src",
+    "build": "parcel build src/jquery.inputsearch.js"
+  },
+  "dependencies": {
+    "jquery": "3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "eslint": "4.14.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "parcel-bundler": "1.3.1"
+  }
+}
