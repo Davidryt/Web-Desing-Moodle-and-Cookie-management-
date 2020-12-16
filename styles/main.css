@@ -1,0 +1,58 @@
+
+.timetable {
+	padding-top: 132px;
+	padding-left: 5%;
+	padding-right: 1%;
+}
+
+.options {
+	padding-top: 100px;
+	padding-left: 5%;
+	padding-right: 1%;
+}
+
+.calendar {
+	padding-top: 132px;
+	padding-left: 12%;
+	padding-right: 5%;
+}
+
+
+.courses {
+	padding: 5%;
+	padding-top: 3%;
+}
+
+.courses a {
+	font-size: 14px;
+}
+
+.flex-container {
+	display: flex;
+	grid-gap: 30px;
+}
+
+.flex-container-2 {
+	display: flex;
+}
+			
+.flex-child {
+	flex: 1;
+}  
+
+.flex-child:first-child {
+	margin-right: 20px;
+} 
+			
+.float-container {
+	padding: 5px;
+}
+
+.float-child {
+	width: 100%;
+	float: center;
+	padding: 5px;
+} 
+.float-child.green {
+	margin-right: 1px;
+}

@@ -22,7 +22,7 @@ li {
 
 .content {
 	background-color: white;
-	padding: 10px;
+	padding-top: 132px;
 }
 
 .content h2, p{
@@ -69,6 +69,9 @@ td {
 	font-size: 65%;
 }
 
+.side{
+    padding-top: 132px;	
+}
 
 .sidecontent {
 	margin-left: 5%;

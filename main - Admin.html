@@ -1,143 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Aula global</title>
+		<title>Aula Global 2.0</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="./style/style.css">
-		<script type="text/javascript" src="./script/script.js"></script>
+
+
+		<link rel="stylesheet" href="./styles/main.css">
+		<link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/style.css">
 		
-		<!-- Importing jquery library -->
+		<!-- Style for Tabs jquery plugin -->		
+        <link rel='stylesheet' href='./styles/jquery.cardtabs.css'>
+		
+		
+		<!-- Script for Tabs jquery plugin -->		
+        <script type='text/javascript' src='./js/jquery.cardtabs.js'></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-		
-		
-		<!-- Links for Tabs jquery plugin -->		
-        <link rel='stylesheet' href='./Themeable-jQuery-Tabs-Plugin-CardTabs/css/jquery.cardtabs.css'>
-        <link rel='stylesheet' href='./Themeable-jQuery-Tabs-Plugin-CardTabs/docs/demo.css'>
-        <script type='text/javascript' src='./Themeable-jQuery-Tabs-Plugin-CardTabs/js/jquery.cardtabs.js'></script>
-		
-		
-		<!-- Links for calendar plugin -->
-		<link rel="stylesheet" type="text/css" href="./easycal-master/easycal.css">
-		<style>
-			body{ width: 960px; margin: 0 auto; font-size: 12px; font-family: Arial; box-sizing: border-box;}
-
-		</style>		
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script type="text/javascript" src="./js/dataset.js"></script>
+		<script type="text/javascript" src="./js/easycal.js"></script>
 		
-		<!-- Links for progress circles plugin -->
-		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-		<link href="./circle-represent-percentage-jcirclize/css/jCirclize.css" rel="stylesheet">
 
-
-		
-		<!-- Style to put 2 div side by side -->
-		<style>
-			.flex-container {
-				display: flex;
-				grid-gap: 30px;
-			}
-
-			.flex-container-2 {
-				display: flex;
-			}
-			
-			.flex-child {
-				flex: 1;
-				
-			}  
-
-			.flex-child:first-child {
-				margin-right: 20px;
-			} 
-			
-			.float-container {
-				padding: 5px;
-			}
-
-			.float-child {
-				width: 100%;
-				float: center;
-				padding: 5px;
-			} 
-			.float-child.green {
-				margin-right: 1px;
-			}
-		</style>
 		
 
 
 	</head>
 	<body>
-	
-		<div>
-	
-		<h1 style="margin-left:7%;margin-top:5%;font-size:40px;">Option Panel</h1>
-		<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Create new course</a>
-		<br><br><br>
-		<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Asign teacher to a course</a>
-		<br><br>
-		<a href="" style="color:#0000EE;font-size:20px;"><img src="images/minus.png" alt="minus" style="width:15px;height:15px;">Remove teacher from a course</a>
-		<br><br><br>
-		<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Enroll student to a course</a>
-		<br><br>
-		<a href="" style="color:#0000EE;font-size:20px;"><img src="images/minus.png" alt="minus" style="width:15px;height:15px;">Remove student from a course</a>
-		<br><br><br><br><br>
+		
+		
+		
+		
+		<header>
+            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+				<div id="block_container">
+				
+				
+				
+                <div class="dropdown" id="bloc1"> <!-- Hamburger menu (only used in phone mode) -->
+                    <img src="images/menu.png" class="menu-img" alt="Menu" onclick="openNav()" >
+                </div>
+					
+				<div id="bloc2">
+					 <img class="profpic" src="images/logv2.png" alt="Rear side of the F2004"> <!-- cOURSE MAIN IMAGE-->
+				</div>
+					
+				<div id="bloc3">
+					 <table class="tabla" id="grad_tbl">
+                <tr>
+                    <th><a class="title" id="username">TEMP</a></th>
+                </tr>
+                <tr>
+                    <th><a class="title2" id="stats">TEMP</a></th>
+                </tr>
+						 </table>
+                    
+				</div>
+					
+                <div id="bloc4">
+                    <a class="buttons" href="#home">Course</a>
+                    <a href="#contact" class="buttons">Contact</a>
+                    <a href="#about" class="buttons">Profile</a>
+                </div>
+					
+				<div id="bloc5">
+                    <button type="button" onclick="logout()" class="logout" id="logout">Log out</button>
+				</div>
+           
+				</div>
+			</div>
+				
+        </header> 
+		<!-- This fake space is an empty div to generate enought space for the side menu, since once fixed, overlaps -->
+      
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 		<a href="#">About</a>
+ 		<a href="#">Services</a>
+  		<a href="#">Clients</a>
+  		<a href="#">Contact</a>
 		</div>
 		
 		
-
-			<!-- Access to courses -->
-		<h2>List of Courses 	<input onkeyup="searchCourses()" id="courseInput" class="input-search input-a" placeholder="Search" /> </h2>
-
-        <div class='tabsholder3'>
-             <div data-tab="All" id="allCourses">
-				<p><a href="course - student.html"> Artificial intelligence - Group 89 </a></p>
-				<p><a href="course - student1.html"> User interfaces - Group 47 </a></p>
-				<p><a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a></p>
-				<p><a href="course - student3.html"> Networks - Group 72 </a></p>
-				<p><a href="course - student4.html"> Databases - Group 43 </a></p>
-				<p><a href="course - student5.html"> Inclusive Leadership - Group 81 </a></p>
-				<p><a href="course - student6.html"> Statistics - Group 34 </a></p>
-
-            </div>
-            <div data-tab="Favorites">
-				<a href="course - student1.html"> User interfaces - Group 47 </a>
-				    <br /><br />
-				<a href="course - student4.html"> Databases - Group 43 </a>
-
-            </div>
-			<div data-tab="2020">
-				<a href="course - student.html"> Artificial intelligence - Group 89 </a>
-				    <br /><br />
-				<a href="course - student1.html"> User interfaces - Group 47 </a>
-				    <br /><br />
-				<a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a>
-				    <br /><br />
-				<a href="course - student3.html"> Networks - Group 72 </a>
-				    <br /><br />
-				<a href="course - student4.html"> Databases - Group 43 </a>
-				    <br /><br />
-				<a href="course - student5.html"> Inclusive Leadership - Group 81 </a>
-            </div>
-			<div data-tab="2019">
-				<a href="course - student6.html"> Statistics - Group 34 </a>
-
-            </div>
 		
+		<div class="options col-12 col-t-12">
+	
+			<h1 style="margin-left:7%;margin-top:5%;font-size:40px;">Option Panel</h1>
+			<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Create new course</a>
+			<br><br><br>
+			<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Asign teacher to a course</a>
+			<br><br>
+			<a href="" style="color:#0000EE;font-size:20px;"><img src="images/minus.png" alt="minus" style="width:15px;height:15px;">Remove teacher from a course</a>
+			<br><br><br>
+			<a href="" style="color:#0000EE;font-size:20px;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;">Enroll student to a course</a>
+			<br><br>
+			<a href="" style="color:#0000EE;font-size:20px;"><img src="images/minus.png" alt="minus" style="width:15px;height:15px;">Remove student from a course</a>
+			<br><br><br><br><br>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="courses col-12 col-t-12">
+			<!-- Access to courses -->
+			<h2>My Courses 	<input onkeyup="searchCourses()" id="courseInput" class="input-search input-a" placeholder="Search" /> </h2>
+
+			<div class='tabsholder3'>
+				<div data-tab="All" id="allCourses">
+					<p><a href="course - student.html"> Artificial intelligence - Group 89 </a></p>
+					<p><a href="course - student1.html"> User interfaces - Group 47 </a></p>
+					<p><a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a></p>
+					<p><a href="course - student3.html"> Networks - Group 72 </a></p>
+					<p><a href="course - student4.html"> Databases - Group 43 </a></p>
+					<p><a href="course - student5.html"> Inclusive Leadership - Group 81 </a></p>
+					<p><a href="course - student6.html"> Statistics - Group 34 </a></p>
+
+				</div>
+				<div data-tab="Favorites">
+					<a href="course - student1.html"> User interfaces - Group 47 </a>
+						<br /><br />
+					<a href="course - student4.html"> Databases - Group 43 </a>
+
+				</div>
+				<div data-tab="2020">
+					<a href="course - student.html"> Artificial intelligence - Group 89 </a>
+						<br /><br />
+					<a href="course - student1.html"> User interfaces - Group 47 </a>
+						<br /><br />
+					<a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a>
+						<br /><br />
+					<a href="course - student3.html"> Networks - Group 72 </a>
+						<br /><br />
+					<a href="course - student4.html"> Databases - Group 43 </a>
+						<br /><br />
+					<a href="course - student5.html"> Inclusive Leadership - Group 81 </a>
+				</div>
+				<div data-tab="2019">
+					<a href="course - student6.html"> Statistics - Group 34 </a>
+
+				</div>
+			
+			</div>
         </div>
 		
 
-		
-		<script type='text/javascript'>
-            $('.tabsholder3').cardTabs({theme: 'graygreen'});
-        </script>
-		
-		<!--The function for the search bar is in the main.js script-->
+	
+	
 		<script src="js/main.js"></script>
+		<script src="./js/sidenav.js"></script>
+		<script src="./js/homepage.js"></script>
 
 	
 	</body>
