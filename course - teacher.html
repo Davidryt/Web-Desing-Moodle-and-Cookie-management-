@@ -7,15 +7,60 @@
 
 		<link rel="stylesheet" href="styles/theme2.css">
 		
+		<link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/style.css">
         <meta charset="UTF-8">
     </head>
     <body>
         <header>
-            <div class="header">
-                
-            </div>
-            
-        </header>
+            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+				<div id="block_container">
+				
+				
+				
+                <div class="dropdown" id="bloc1"> <!-- Hamburger menu (only used in phone mode) -->
+                    <img src="images/menu.png" class="menu-img" alt="Menu" onclick="openNav()" >
+                </div>
+					
+				<div id="bloc2">
+					 <img class="profpic" src="images/logv2.png" alt="Rear side of the F2004"> <!-- cOURSE MAIN IMAGE-->
+				</div>
+					
+				<div id="bloc3">
+					 <table class="tabla" id="grad_tbl">
+                <tr>
+                    <th><a class="title" id="username">TEMP</a></th>
+                </tr>
+                <tr>
+                    <th><a class="title2" id="stats">TEMP</a></th>
+                </tr>
+						 </table>
+                    
+				</div>
+					
+                <div id="bloc4">
+                    <a class="buttons" href="#home">Course</a>
+                    <a href="#contact" class="buttons">Contact</a>
+                    <a href="#about" class="buttons">Profile</a>
+                </div>
+					
+				<div id="bloc5">
+                    <button type="button" onclick="logout()" class="logout" id="logout">Log out</button>
+				</div>
+           
+				</div>
+			</div>
+				
+        </header> 
+		<!-- This fake space is an empty div to generate enought space for the side menu, since once fixed, overlaps -->
+      
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 		<a href="#">About</a>
+ 		<a href="#">Services</a>
+  		<a href="#">Clients</a>
+  		<a href="#">Contact</a>
+		</div>
 
 
 
@@ -96,10 +141,10 @@
         </div>
 		
 		
-        <footer id="footer">
-            
-        </footer>
+        
 		<script src="js/course.js"></script>
 		<script src="js/caleandar.js"></script>
+			<script src="./js/sidenav.js"></script>
+		<script src="./js/homepage.js"></script>
     </body>
 </html>
