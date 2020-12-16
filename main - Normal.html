@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Aula global</title>
+		<title>Aula Global 2.0</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,7 +36,15 @@
 		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 		<link href="./circle-represent-percentage-jcirclize/css/jCirclize.css" rel="stylesheet">
 
-
+		
+		
+		<link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/style.css">
+		
+		
+		
+		
+		
 		
 		<!-- Style to put 2 div side by side -->
 		<style>
@@ -76,7 +84,65 @@
 
 	</head>
 	<body>
-	
+		
+		
+		
+		
+		<header>
+            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+				<div id="block_container">
+				
+				
+				
+                <div class="dropdown" id="bloc1"> <!-- Hamburger menu (only used in phone mode) -->
+                    <img src="images/menu.png" class="menu-img" alt="Menu" onclick="openNav()" >
+                </div>
+					
+				<div id="bloc2">
+					 <img class="profpic" src="images/logv2.png" alt="Rear side of the F2004"> <!-- cOURSE MAIN IMAGE-->
+				</div>
+					
+				<div id="bloc3">
+					 <table class="tabla" id="grad_tbl">
+                <tr>
+                    <th><a class="title" id="username">TEMP</a></th>
+                </tr>
+                <tr>
+                    <th><a class="title2" id="stats">TEMP</a></th>
+                </tr>
+						 </table>
+                    
+				</div>
+					
+                <div id="bloc4">
+                    <a class="buttons" href="#home">Course</a>
+                    <a href="#contact" class="buttons">Contact</a>
+                    <a href="#about" class="buttons">Profile</a>
+                </div>
+					
+				<div id="bloc5">
+                    <button type="button" onclick="logout()" class="logout" id="logout">Log out</button>
+				</div>
+           
+				</div>
+			</div>
+				
+        </header> 
+		<!-- This fake space is an empty div to generate enought space for the side menu, since once fixed, overlaps -->
+      
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 		<a href="#">About</a>
+ 		<a href="#">Services</a>
+  		<a href="#">Clients</a>
+  		<a href="#">Contact</a>
+		</div>
+		
+		
+		
+		
+		
+		
 		<div class="flex-container">
 	
 			<!-- Weekly calendar -->
@@ -170,36 +236,36 @@
 
         <div class='tabsholder3'>
             <div data-tab="All" id="allCourses">
-				<p><a> Artificial intelligence - Group 89 </a></p>
-				<p><a> User interfaces - Group 47 </a></p>
-				<p><a> Introduction to Business Engineering - Group 65 </a></p>
-				<p><a> Networks - Group 72 </a></p>
-				<p><a> Databases - Group 43 </a></p>
-				<p><a> Inclusive Leadership - Group 81 </a></p>
-				<p><a> Statistics - Group 34 </a></p>
+				<p><a href="course - student.html"> Artificial intelligence - Group 89 </a></p>
+				<p><a href="course - student1.html"> User interfaces - Group 47 </a></p>
+				<p><a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a></p>
+				<p><a href="course - student3.html"> Networks - Group 72 </a></p>
+				<p><a href="course - student4.html"> Databases - Group 43 </a></p>
+				<p><a href="course - student5.html"> Inclusive Leadership - Group 81 </a></p>
+				<p><a href="course - student6.html"> Statistics - Group 34 </a></p>
 
             </div>
             <div data-tab="Favorites">
-				<a> User interfaces - Group 47 </a>
+				<a href="course - student1.html"> User interfaces - Group 47 </a>
 				    <br /><br />
-				<a> Databases - Group 43 </a>
+				<a href="course - student4.html"> Databases - Group 43 </a>
 
             </div>
 			<div data-tab="2020">
-				<a> Artificial intelligence - Group 89 </a>
+				<a href="course - student.html"> Artificial intelligence - Group 89 </a>
 				    <br /><br />
-				<a> User interfaces - Group 47 </a>
+				<a href="course - student1.html"> User interfaces - Group 47 </a>
 				    <br /><br />
-				<a> Introduction to Business Engineering - Group 65 </a>
+				<a href="course - student2.html"> Introduction to Business Engineering - Group 65 </a>
 				    <br /><br />
-				<a> Networks - Group 72 </a>
+				<a href="course - student3.html"> Networks - Group 72 </a>
 				    <br /><br />
-				<a> Databases - Group 43 </a>
+				<a href="course - student4.html"> Databases - Group 43 </a>
 				    <br /><br />
-				<a> Inclusive Leadership - Group 81 </a>
+				<a href="course - student5.html"> Inclusive Leadership - Group 81 </a>
             </div>
 			<div data-tab="2019">
-				<a> Statistics - Group 34 </a>
+				<a href="course - student6.html"> Statistics - Group 34 </a>
 
             </div>
 		
@@ -213,6 +279,12 @@
 		
 		<!--The function for the search bar is in the main.js script-->
 		<script src="js/main.js"></script>
+	
+	
+	
+	
+		<script src="./js/sidenav.js"></script>
+		<script src="./js/homepage.js"></script>
 
 	
 	</body>

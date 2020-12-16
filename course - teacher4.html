@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Course page</title>
+		<link rel="stylesheet" href="styles/course.css">
+		
+
+		<link rel="stylesheet" href="styles/theme2.css">
+		
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                
+            </div>
+            
+        </header>
+
+
+
+        <div id="content" class="content col-9 col-t-9">
+			<h2><a href="#" style="margin-left:0;color:black;">My Courses</a> > 2020 > User Interfaces (Group 89)</h2>
+			
+			<br>
+			<p style="font-weight: bold;">TOPIC 1 The Human-Computer Interaction</p>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Introduction to Human-Computer Interaction</a><br>
+			<a href="#" style="margin-left:11%;"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Exercise - Norman Model</a><br>
+			<a href="#" style="margin-left:11%;"><img src="images/box.png" alt="upload" style="width:10px;height:15px;"> Exercise Submission - Norman Model</a><br>
+			<a href="#" style="margin-left:11%;"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Solution - Norman Model</a><br><br>
+			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
+			
+			<p style="font-weight: bold;">TOPIC 2 The User Interface</p>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Introduction to the User Interface</a><br>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Usability</a><br>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Methodology</a><br>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Accessibility</a><br><br>
+			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
+			
+			<p style="font-weight: bold;">TOPIC 3 The Web Design</p>
+			<a style="color:black;" href="#"><img class="icon_com" src="images/zip.png" alt="zip" style="width:10px;height:15px;"> Code for project<a><br><br>
+			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
+			
+			<p><a href="#" style="margin-left:0;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> Add new topic</a></p>
+        </div>
+		
+		
+        <div  class="side col-3 col-t-12">
+            <p style="font-weight: bold;text-align:center;margin-top:70px;font-size:15px;">Important dates</p>
+			<div id="caleandar"></div>
+			
+			<div class="sidecontent">
+				<h3 style="text-align:left;margin-left:15px;">Forum	<input onkeyup="searchForum()" style="margin-left:17%;width:55%;" id="forumInput" type="text" placeholder="Search.."></h3>
+				<div style="height:220px;overflow:auto;">
+				<table id="forum" class="forum">
+					<tr>
+						<td>@all_students I don't understand accessibility</td>
+					</tr>
+					<tr>
+						<td style="border-radius:20px 20px 0 20px;">The definition is in the slides!</td>
+					</tr>
+					<tr>
+						<td style="border-radius:20px 20px 0 20px;">Slide number 17!</td>
+					</tr>
+					<tr>
+						<td>Thanks!!</td>
+					</tr>
+					<tr>
+						<td style="border-style:none;">
+							<div style="height:5px;width:100%;background-color:black;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>@teacher, could we do more exercises</td>
+					</tr>
+				</table>
+				
+				</div>
+			</div>
+			
+			<div class="sidecontent">
+				<h3 style="text-align:center;">Poll: Should we change the exam?</h3>
+				<input type="radio" id="yes" name="poll" value="yes" style="margin-left:17%;">
+				<label>Yes</label><br>
+				<input type="radio" id="no" name="poll" value="no" style="margin-left:17%;">
+				<label>No</label><br><br>
+				
+				<a href="#" style="margin-left:10%;color:#0000EE;">Change poll</a>
+			</div>
+			
+			<div class="sidecontent">
+				<h3 style="text-align:center;">Live Feedback</h3>
+			</div>
+		</div>
+			
+        </div>
+		
+		
+        <footer id="footer">
+            
+        </footer>
+		<script src="js/course.js"></script>
+		<script src="js/caleandar.js"></script>
+    </body>
+</html>

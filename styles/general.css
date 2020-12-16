@@ -16,6 +16,13 @@ li {
 
 /*This is the style for the main logo of the web page, in the upper left corner.*/
 
+.logout{
+    font-size: 18px;
+    border-radius: 4px;
+	background-color: #E54648;
+	
+}
+
 .course-logo {
     border-radius: 50px;
     width: 80px;
@@ -27,17 +34,20 @@ li {
     position: fixed;
     left: 0;
     bottom: 0;
+	height: 100px; 
     width: 100%;
-    background-color: #274b69;
-    color: white;
+    background-color: #add8e6;
+    color: #010E77;
 	/*border-radius: 20px;*/
     text-align: right;
+	vertical-align: middle;
 	
 }
 
 #footer a{
+	vertical-align: middle;
 	text-decoration: none;
-	color: white;
+	color: #010E77;
 	margin-right: 20px;
 }
 /*We created a flotating side menu, that keeps fixed while scrolling. 
@@ -93,17 +103,21 @@ a:visited {
     float: left;
 }
 
-.menu-img {
-    float: left;
+.menu-img {    
     width: 40px;
-    display: none
 }
+
+.profpic {
+    width: 80px;
+	border-radius: 50%;
+}
+
 /*We also created a fixed header with buttons on the left*/
 .header {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: #274b69;
+    background-color: #add8e6;
     padding: 20px 10px;
     margin-top: -16px;
 	margin-left: -8px;
@@ -123,11 +137,15 @@ a:visited {
 }
 
 .header a.title {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size: 45px;
+    font-size: 20px;
     font-weight: bold;
-	color: white;
+	color: #010E77;
+}
+
+.header a.title2 {
+    font-size: 15px;
+    font-weight: bold;
+	color: #010E77;
 }
 
 .header a.buttons:hover {
@@ -140,43 +158,10 @@ a:visited {
     color: black;
 }
 
-.header-right {
-	margin-top: 23px;
-    float: right;
-}
 /*This menu appears when phone mode enabled, and shows a hamburguer*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-    float: left;
-    padding-top: 10px;
-    padding-right: 20px
-}
 
-.dropdown-content {
-	margin-top: 40px;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
 
-.dropdown-content a:hover {
-    background-color: #c6ccd8
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 /*used to set col sizes and responsiveness*/
 [class*="col-"] {
     float: left;
@@ -228,6 +213,10 @@ a:visited {
 /*tablet column divisions*/
 @media screen and (max-width: 768px) and (min-width: 600px) {
    
+	.menu-img {
+        display: block;
+    }
+	
 	.header a.title{
 		font-size: 19px;
 	}
@@ -277,6 +266,11 @@ a:visited {
 /*Desktop column division*/
 @media only screen and (min-width: 769px) {
     /*FOR DESKTOP*/
+	
+	
+	.menu-img {
+        display: block;
+    }
 	
     .col-1 {
         width: 8.33%;

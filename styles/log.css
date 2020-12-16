@@ -12,13 +12,15 @@ input[type=text], input[type=password], select {
 
 
 h2,h3{
+	color: #010E77;
+	padding-top: 20px;
 	text-align: center;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #2F50A9;
-  color: white;
+  background-color: #add8e6;
+  color: #010E77;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -26,6 +28,10 @@ button {
   width: 100%;
   border-radius: 24px;
 
+}
+
+.uc3mlogo{
+	width: 250px;
 }
 
 button:hover {
@@ -82,11 +88,6 @@ img.avatar {
   border: 5px solid black;
   margin-bottom: -50px
 }
-.container_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .container {
   padding: 16px;
@@ -95,6 +96,28 @@ img.avatar {
 .container_forg {
   padding-bottom: 50px;
   
+}
+
+
+#minihead
+{
+	margin-top: -20px;
+	margin-left: -20px;
+	height: 130px;
+	background-color: #add8e6;
+}
+
+#block_container
+{
+	margin-top: 150px;
+    text-align:center;
+}
+#bloc1, #bloc2
+{
+    display:inline-block;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -179,4 +202,100 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+   
+	.header a.title{
+		font-size: 19px;
+	}
+	.col-t-1 {
+        width: 8.33%;
+    }
+    .col-t-2 {
+        width: 16.66%;
+    }
+    .col-t-3 {
+        width: 25%;
+    }
+    .col-t-4 {
+        width: 33.33%;
+    }
+    .col-t-5 {
+        width: 41.66%;
+    }
+    .col-t-6 {
+        width: 50%;
+    }
+    .col-t-7 {
+        width: 58.33%;
+    }
+    .col-t-8 {
+        width: 66.66%;
+    }
+    .col-t-9 {
+        width: 75%;
+    }
+    .col-t-10 {
+        width: 83.33%;
+    }
+    .col-t-11 {
+        width: 91.66%;
+    }
+    .col-t-12 {
+        width: 100%;
+    }
+	.col-t-13 {
+        width: 120%;
+    }
+	#spacer {
+    margin-top: 0%;
+}
+	#spacer_2 {
+        margin-top: 25%;
+    }
+}
+/*Desktop column division*/
+@media only screen and (min-width: 769px) {
+    /*FOR DESKTOP*/
+	
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+	.col-13 {
+        width: 102%;
+    }
 }
