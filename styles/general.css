@@ -20,6 +20,8 @@ li {
     font-size: 18px;
     border-radius: 4px;
 	background-color: #E54648;
+	height:40px;
+	width:100px;
 	
 }
 
@@ -34,7 +36,7 @@ li {
     position: fixed;
     left: 0;
     bottom: 0;
-	height: 100px; 
+	height: 30px; 
     width: 100%;
     background-color: #add8e6;
     color: #010E77;

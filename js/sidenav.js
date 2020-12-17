@@ -12,10 +12,10 @@ function closeNav() {
 } 
 
 
-var modal = document.getElementById('mySidenav');
+var nav = document.getElementById('mySidenav');
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == nav) {
         closeNav();
     }
 }

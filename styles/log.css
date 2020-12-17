@@ -30,6 +30,30 @@ button {
 
 }
 
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	height: 30px; 
+    width: 100%;
+    background-color: #add8e6;
+    color: #010E77;
+	/*border-radius: 20px;*/
+    text-align: right;
+	vertical-align: middle;
+	
+}
+
+#footer a{
+	vertical-align: middle;
+	text-decoration: none;
+	color: #010E77;
+	margin-right: 20px;
+}
+
+
+
+
 .uc3mlogo{
 	width: 250px;
 }

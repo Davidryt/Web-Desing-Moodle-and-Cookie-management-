@@ -5,10 +5,10 @@
   margin-top:40px;
 }
 .cld-main a{
-  color: #0080FF;
+  color: #add8e6;
 }
 .cld-main svg{
-  fill: #0080FF;
+  fill: #add8e6;
 }
   .cld-datetime{
     position: relative;
@@ -37,7 +37,7 @@
     cursor: pointer;
   }
   .cld-nav:hover svg{
-      fill: #005EFF;
+      fill: #add8e6;
   }
   .cld-rwd{
     float: left;
@@ -62,7 +62,7 @@
     border: 1px solid #eee;
   }
   .cld-day.today .cld-number{
-    background: #0080FF;
+    background: #add8e6;
     color: #fff;
   }
   .cld-day.disableDay{
@@ -113,5 +113,6 @@
         background: #eee;
       }
       .today .cld-number.eventday:hover{
-        background: #005EFF;
+        background: #add8e6;
       }
+

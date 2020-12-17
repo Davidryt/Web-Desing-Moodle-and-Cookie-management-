@@ -24,8 +24,9 @@ p {
 
     display:inline-block;
 	vertical-align: middle;
-	align-items: center;
-	justify-content: center;
+	align-items: left;
+	justify-content: left;
+	
 }
 
 
@@ -41,6 +42,8 @@ p {
 
 
 .sidenav {
+	margin-top: 130px;
+	position: relative;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */

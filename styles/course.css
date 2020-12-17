@@ -82,7 +82,18 @@ td {
 	text-align: left;
 }
 
-
+.sidecontent-stars {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom:60px;
+	border-radius: 20px;
+	border-style: solid;
+	text-align: left;
+	align-content: center;
+	padding-left:20%;
+	padding-bottom:60px;
+}
 
 /*used to set col sizes and responsiveness*/
 [class*="col-"] {
