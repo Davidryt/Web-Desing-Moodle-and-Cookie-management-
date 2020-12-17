@@ -17,6 +17,10 @@
 	padding-right: 5%;
 }
 
+#percentage{
+		padding-top:50px;
+	}
+
 
 .courses {
 	padding: 5%;
@@ -55,4 +59,13 @@
 } 
 .float-child.green {
 	margin-right: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    #percentage{
+		display:none;
+	}
+	#capper{
+		display:none;
+	}
 }

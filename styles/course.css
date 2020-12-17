@@ -102,7 +102,17 @@ td {
 }
 
 
+
+@media screen and (max-width: 600px) {
+    /*SMART*/
+	.content {
+	background-color: white;
+	padding-top: 170px;
 }
+	
+}
+
+
 /*tablet column divisions*/
 @media screen and (max-width: 768px) and (min-width: 600px) {
    

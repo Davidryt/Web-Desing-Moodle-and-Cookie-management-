@@ -9,13 +9,13 @@
 		
 		<link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/style.css">
-		
 		<link rel="stylesheet" href="styles/stars.css">
+		
         <meta charset="UTF-8">
     </head>
     <body>
         <header>
-            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+            <div class="header">  <!-- Header part: Will be the same in each file-->
 				<div id="block_container">
 				
 				
@@ -31,16 +31,16 @@
 				<div id="bloc3">
 					 <table class="tabla" id="grad_tbl">
                 <tr>
-                    <th style="border: 0px;"><a class="title" id="username">TEMP</a></th>
+                    <th><a class="title" id="username">TEMP</a></th>
                 </tr>
                 <tr>
-                    <th style="border: 0px;"><a class="title2" id="stats">TEMP</a></th>
+                    <th><a class="title2" id="stats">TEMP</a></th>
                 </tr>
 						 </table>
                     
 				</div>
 					
-              
+                
 					
 				<div id="bloc5">
                     <button type="button" onclick="logout()" class="logout" id="logout">Log out</button>
@@ -64,27 +64,78 @@
 
         <div id="content" class="content col-9 col-t-9">
 			<h2><a href="#" style="margin-left:0;color:black;">My Courses</a> > 2020 > User Interfaces (Group 89)</h2>
+			<p style="cursor:pointer;" onclick="showGrades()"><img src="images/arrowr.png" alt="dropdown arrow" style="width:13px;height:13px;"> Grades</p>
+			
+			<div id="gradeTable">
+				<table class="table">
+					<tr>
+						<th>Activity</th>
+						<th>Grade</th>
+						<th>Weight</th>
+						<th>Contribution to course total</th>
+					</tr>
+					<tr>
+						<td>Test I</td>
+						<td>8.6 - 10</td>
+						<td>5%</td>
+						<td>0.43 - 0.5</td>
+					</tr>
+					<tr>
+						<td>First Lab assignment</td>
+						<td>9 - 10</td>
+						<td>10%</td>
+						<td>0.9 - 1</td>
+					</tr>
+					<tr>
+						<td>Second Lab assignment</td>
+						<td>7 - 10</td>
+						<td>10%</td>
+						<td>0.7 - 1</td>
+					</tr>
+					<tr>
+						<td>Test II</td>
+						<td>8.2 - 10</td>
+						<td>5%</td>
+						<td>0.41 - 0.5</td>
+					</tr>
+					<tr>
+						<td>Third Lab assignment</td>
+						<td>Not graded</td>
+						<td>20%</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Final exam</td>
+						<td>Not graded</td>
+						<td>50%</td>
+						<td>-</td>
+					</tr>
+					
+					<tr><td></td><td></td><td></td><td></td></tr>
+					<tr>
+						<td>Course Total</td>
+						<td>-</td>
+						<td>100%</td>
+						<td>2.44 - 3</td>
+					</tr>
+				</table>
+			</div>
 			
 			<br>
 			<p style="font-weight: bold;">TOPIC 1 The Human-Computer Interaction</p>
 			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Introduction to Human-Computer Interaction</a><br>
 			<a href="#" style="margin-left:11%;"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Exercise - Norman Model</a><br>
 			<a href="#" style="margin-left:11%;"><img src="images/box.png" alt="upload" style="width:10px;height:15px;"> Exercise Submission - Norman Model</a><br>
-			<a href="#" style="margin-left:11%;"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Solution - Norman Model</a><br><br>
-			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
+			<a href="#" style="margin-left:11%;"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Solution - Norman Model</a>
 			
 			<p style="font-weight: bold;">TOPIC 2 The User Interface</p>
 			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> Introduction to the User Interface</a><br>
 			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Usability</a><br>
 			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Methodology</a><br>
-			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Accessibility</a><br><br>
-			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
+			<a href="#"><img src="images/pdf.png" alt="pdf" style="width:10px;height:15px;"> The Accessibility</a>
 			
 			<p style="font-weight: bold;">TOPIC 3 The Web Design</p>
-			<a style="color:black;" href="#"><img class="icon_com" src="images/zip.png" alt="zip" style="width:10px;height:15px;"> Code for project<a><br><br>
-			<a href="#"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> New material for the topic</a>
-			
-			<p><a href="#" style="margin-left:0;"><img src="images/plus.png" alt="plus" style="width:15px;height:15px;"> Add new topic</a></p>
+			<a style="color:black;" href="#"><img class="icon_com" src="images/zip.png" alt="zip" style="width:10px;height:15px;"> Code for project<a>
         </div>
 		
 		
@@ -127,16 +178,14 @@
 				<label>Yes</label><br>
 				<input type="radio" id="no" name="poll" value="no" style="margin-left:17%;">
 				<label>No</label><br><br>
-				
-				<a href="#" style="margin-left:10%;color:#0000EE;">Change poll</a>
 			</div>
-			
-			
 			
 			<div class="sidecontent-stars">
 				<h3>Live Feedback</h3>
 				<div ><div class="starRatingContainer"><div class="ratingSystem"></div></div><p>Your Rating:</p><div class="ratingHolder"></div></div>
 </div>
+			</div>
+		</div>
 		
 		<footer id="footer">
             <div class="col-2">
@@ -149,11 +198,14 @@
                 <a href="#options">Options</a>
             </div>
         </footer>
+			
         
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/course.js"></script>
 		<script src="js/caleandar.js"></script>
-			<script src="./js/sidenav.js"></script>
+		<script src="./js/sidenav.js"></script>
 		<script src="./js/homepage.js"></script>
 		<script src="./js/stars.js"></script>
 		
@@ -177,6 +229,8 @@
     rateSystem("update1.2", [properties2[2]], function(rating, ratingTargetElement, isTouchScreen){ ratingTargetElement.parentElement.parentElement.getElementsByClassName("ratingHolder")[0].innerHTML = rating; }, function(rating, ratingTargetElement, isTouchScreen){document.getElementById("customTooltip").innerHTML=rating; if(rating>4.5){document.getElementById("customTooltip").innerHTML="perfect :)"} document.getElementById("customTooltip").style.top=(ratingTargetElement.getBoundingClientRect().bottom + 2)+"px"; document.getElementById("customTooltip").style.display = "inline-block"; if(isTouchScreen){document.getElementById("customTooltip").style.backgroundColor="purple";} }, function(rating, ratingTargetElement, isTouchScreen){ document.getElementById("customTooltip").style.display="none"; });
 
 </script>
+		
+		
 		
     </body>
 </html>

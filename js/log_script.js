@@ -153,7 +153,7 @@ function checkCookie(uname,psw) {
   }else if(flag==1){
 	alert("Welcome again Teacher " + uname.value);
 	activecookie(uname.value);
-	window.location.replace("./main - Normal.html");
+	window.location.replace("./main - Teacher.html");
   }else if(flag==3){
 	alert("Welcome again Admin " + uname.value);
 	activecookie(uname.value);

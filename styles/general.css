@@ -16,12 +16,43 @@ li {
 
 /*This is the style for the main logo of the web page, in the upper left corner.*/
 
+.flag{
+	width: 40px;
+}
+
+#block_container2
+{
+	margin-top: 100%;
+    text-align:center;
+}
+
+
+@media screen and (max-height: 750px) {
+  #block_container2{
+	margin-top: 20px;
+    text-align:center;
+	}
+}
+
+
+ #blocfl1, #blocfl2
+{
+    display:inline-block;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+
 .logout{
     font-size: 18px;
     border-radius: 4px;
 	background-color: #E54648;
 	height:40px;
 	width:100px;
+	margin-top:-100px;
 	
 }
 
@@ -177,8 +208,8 @@ a:visited {
 /*Phone especific measures (hide image show hamburger, margins, etc)*/
 @media screen and (max-width: 600px) {
     /*SMART*/
-	.header a.title{
-		font-size: 30px;
+	.sidenav {
+	margin-top: 150px;
 	}
 	
     #course-contents {

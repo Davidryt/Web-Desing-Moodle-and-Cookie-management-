@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aula Global 2.0</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+		<link rel="stylesheet" href="./styles/main.css">
+		<link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+		<!-- Style for Calendar jquery plugin -->
+		<link rel="stylesheet" href="./styles/theme1.css"/>
+		
+		<!-- Style for Tabs jquery plugin -->		
+        <link rel='stylesheet' href='./styles/jquery.cardtabs.css'>
+		
+		<!-- Style for timetable plugin -->
+		<link rel="stylesheet" type="text/css" href="./styles/easycal.css">
+		
+		<!-- Style for progress circles plugin -->
+		<link href="./styles/jCirclize.css" rel="stylesheet">
+		
+		
+		
+		<!-- Scripts for the timetable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script type="text/javascript" src="./js/dataset.js"></script>
+		<script type="text/javascript" src="./js/easycal.js"></script>
+		
+		<!-- Script for Tabs jquery plugin -->		
+        <script type='text/javascript' src='./js/jquery.cardtabs.js'></script>
+		
+		<!-- Script for progress circles plugin -->
+		<script src="./js/jquery.jCirclize.js"></script>
+		
+
+		
+
+
+	</head>
+	<body>
+		
+		
+		
+		
+		<header>
+            <div class="header">  <!-- Header part: Will be the ssame in each file-->
+				<div id="block_container">
+				
+				
+				
+                <div class="dropdown" id="bloc1"> <!-- Hamburger menu (only used in phone mode) -->
+                    <img src="images/menu.png" class="menu-img" alt="Menu" onclick="openNav()" >
+                </div>
+					
+				<div id="bloc2">
+					 <img class="profpic" src="images/logv2.png" alt="profpic"> <!-- cOURSE MAIN IMAGE-->
+				</div>
+					
+				<div id="bloc3">
+					 <table class="tabla" id="grad_tbl">
+                <tr>
+                    <th><a class="title" id="username">TEMP</a></th>
+                </tr>
+                <tr>
+                    <th><a class="title2" id="stats">TEMP</a></th>
+                </tr>
+						 </table>
+                    
+				</div>
+					
+              
+					
+				<div id="bloc5">
+                    <button type="button" onclick="logout()" class="logout" id="logout">Log out</button>
+				</div>
+           
+				</div>
+			</div>
+				
+        </header> 
+		<!-- This fake space is an empty div to generate enought space for the side menu, since once fixed, overlaps -->
+      
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 		<a href="./main - Teacher.html">Courses</a>
+ 		<a href="#">About</a>
+  		<a href="#">Help</a>
+  		<a href="#">Contact</a>
+		<div id="block_container2">
+			<div id="blocfl1">
+				<img href="#" class="flag" src="images/esp.png" alt="flagwesp">
+			</div id="blocfl2">
+			<div>
+				<img href="#" class="flag" src="images/eng.png" alt="flagweng">
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="timetable col-6 col-t-6">
+			
+			<h2>Weekly Calendar</h2>
+
+			<div class="mycal" id="mycal" style="width:100%;"></div>
+		</div>
+		
+		
+		<div class="calendar col-6 col-t-6">
+		
+			<h2>Exams & Projects Calendar</h2>
+			<div id="caleandar"></div>
+			
+			<div id="percentage"></div>
+			<div id="capper">Progress of the semester</div>
+			
+		</div>
+		
+		
+		<div class="courses col-12 col-t-12">
+			<!-- Access to courses -->
+			<h2>My Courses 	<input onkeyup="searchCourses()" id="courseInput" class="input-search input-a" placeholder="Search" /> </h2>
+
+			<div class='tabsholder3'>
+				<div data-tab="All" id="allCourses">
+					<p><a href="course - teacher.html"> Artificial intelligence - Group 89 </a></p>
+					<p><a href="course - teacher1.html"> User interfaces - Group 47 </a></p>
+					<p><a href="course - teacher2.html"> Introduction to Business Engineering - Group 65 </a></p>
+					<p><a href="course - teacher3.html"> Networks - Group 72 </a></p>
+					<p><a href="course - teacher4.html"> Databases - Group 43 </a></p>
+					<p><a href="course - teacher5.html"> Inclusive Leadership - Group 81 </a></p>
+					<p><a href="course - teacher6.html"> Statistics - Group 34 </a></p>
+
+				</div>
+				<div data-tab="Favorites">
+					<a href="course - teacher1.html"> User interfaces - Group 47 </a>
+						<br /><br />
+					<a href="course - teacher4.html"> Databases - Group 43 </a>
+
+				</div>
+				<div data-tab="2020">
+					<a href="course - teacher.html"> Artificial intelligence - Group 89 </a>
+						<br /><br />
+					<a href="course - teacher1.html"> User interfaces - Group 47 </a>
+						<br /><br />
+					<a href="course - teacher2.html"> Introduction to Business Engineering - Group 65 </a>
+						<br /><br />
+					<a href="course - teacher3.html"> Networks - Group 72 </a>
+						<br /><br />
+					<a href="course - teacher4.html"> Databases - Group 43 </a>
+						<br /><br />
+					<a href="course - teacher5.html"> Inclusive Leadership - Group 81 </a>
+				</div>
+				<div data-tab="2019">
+					<a href="course - teacher6.html"> Statistics - Group 34 </a>
+
+				</div>
+			
+			</div>
+        </div>
+		
+		<footer id="footer">
+            <div class="col-2">
+                <a href="#copyright">Copyright</a>
+            </div>
+            <div class="col-4">
+                <a href="#policy">Privacy policy</a>
+            </div>
+            <div class="col-5">
+                <a href="#options">Options</a>
+            </div>
+        </footer>
+		
+		
+
+		<!--Script for the calendar-->
+		<script type="text/javascript" src="./js/caleandar.js"></script>
+	
+	
+		<script src="js/main.js"></script>
+		<script src="./js/sidenav.js"></script>
+		<script src="./js/homepage.js"></script>
+
+	
+	</body>
+</html>
